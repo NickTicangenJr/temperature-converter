@@ -19,19 +19,19 @@
     </v-app-bar>
 
     <v-main>
-      <HelloWorld/>
+      <TempConverter/>
     </v-main>
   </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld';
+import TempConverter from './components/TempConverter';
 
 export default {
   name: 'App',
 
   components: {
-    HelloWorld,
+    TempConverter,
   },
 
   data: () => ({
