@@ -44,11 +44,11 @@
         this.$refs.form.validate()
 
         if(this.type[0] == this.txtType){
-          let computed = (parseInt(this.txtDegrees) - 32) / 1.8
-          this.txtResult = parseFloat(computed).toFixed(2)+" °C"
-        }else if(this.type[1] == this.txtType){
           let computed = (parseInt(this.txtDegrees)*1.8) + 32
-          this.txtResult = parseFloat(computed).toFixed(1) + " °F"
+          this.txtResult = parseFloat(computed).toFixed(2)+" °F"
+        }else if(this.type[1] == this.txtType){
+          let computed = (parseInt(this.txtDegrees) - 32) / 1.8
+          this.txtResult = parseFloat(computed).toFixed(1) + " °C"
         }
       },
     }
